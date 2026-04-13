@@ -63,6 +63,6 @@ export const evaluateDecision = async (
 };
 
 export const getHealthStatus = async (): Promise<{ status: string }> => {
-  const response = await axios.get('/health');
+  const response = await api.get('/health');
   return response.data;
 };
